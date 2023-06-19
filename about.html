@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add the path to your stylesheet -->
+    <style>
+        /* Add any additional styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #f8f8f8;
+            border: none;
+            border-radius: 0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .navbar-toggle {
+            background-color: transparent;
+            border: none;
+        }
+
+        .navbar-toggle .icon-bar {
+            background-color: #333;
+        }
+
+        .navbar-nav>li>a {
+            color: #333;
+        }
+
+        .navbar-nav>.active>a,
+        .navbar-nav>.active>a:hover,
+        .navbar-nav>.active>a:focus {
+            background-color: #f8f8f8;
+        }
+
+        .form-control {
+            width: 200px;
+        }
+
+        .btn-default {
+            background-color: #333;
+            color: #fff;
+            border: none;
+        }
+
+        .kiondo,
+        .clothes,
+        .bags {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+        }
+
+        .kiondo img,
+        .clothes img,
+        .bags img {
+            width: 50%;
+            height: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="cccc.html">Home</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="About.html">About us</a></li>
+                <li><a href="Contact.html">Contact us</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="products.html" class="dropdown-toggle" data-toggle="dropdown">Products <b
+                            class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">kiondo</a></li>
+                        <li><a href="#">clothing</a></li>
+                        <li><a href="#">bags</a></li>
+                        <li><a href="#">wicker swing chairs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="kiondo">
+        <p>NEW COLLECTIONS</p>
+        <p>KIONDO COTTON ROPE BASKET</p>
+        <img src="Kiondo_Open3.jpg" class="img-responsive" alt="Image">
+        <button type="button" class="btn btn-default">ADD TO CART</button>
+    </div>
+    <div class="clothes">
+        <img src="images.jpg" class="img-responsive" alt="Image">
+        <button type="button" class="btn btn-default">ADD TO CART</button>
+    </div>
+    <div class="bags">
+        <img src="bag2.webp" class="img-responsive" alt="Image">
+        <button type="button" class="btn btn-default">ADD TO CART</button>
+    </div>
+    <button type="button" class="btn btn-primary disabled">button</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
